@@ -1,0 +1,105 @@
+.App {
+  font-family: Arial, sans-serif;
+  text-align: left;
+}
+
+.botonModal {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 20px;
+}
+
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #000000;
+  color: #ffffff;
+  margin: 2% auto;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 950px;
+  max-height: 140vh;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+  color: #bbb;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  color: #b0bec5; 
+}
+
+input, textarea {
+  width: 100%;
+  padding: 6px; 
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #424242;
+  color: #ffffff;
+  transition: border-color 0.3s ease;
+}
+
+select {
+  width: 220px;
+  height: 42px;
+  padding: 6px; 
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #424242;
+  color: #ffffff;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #1e88e5; /* Color de borde al enfocar */
+  outline: none;
+}
+
+button {
+  padding: 10px;
+  background-color: #191a1b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-container {
+  text-align: right;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #1565c0; /* Azul más oscuro */
+}

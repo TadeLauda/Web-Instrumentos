@@ -1,0 +1,104 @@
+/* InstrumentoDetalles.css */
+.instrumento-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #000000e9;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.044), rgb(0, 0, 0)), url('https://www.ilproson.es/images/ilproson-nigran-instrumentos.jpg');
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.instrumento-detail .button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.instrumento-detail .button.volver {
+    align-self: flex-start;
+}
+
+.instrumento-detail .button.agregar {
+    background-color: #00a650;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.instrumento-imagen2 {
+    width: 100%;
+    text-align: center;
+}
+
+.instrumento-imagen2 img {
+    max-width: 100%;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.instrumento-info {
+    width: 100%;
+    padding: 20px;
+}
+
+.instrumento-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.instrumento-info .cantidad-vendida {
+    font-size: 16px;
+    color: #00a650;
+    margin-bottom: 10px;
+}
+
+.instrumento-info p {
+    margin: 5px 0;
+}
+
+.instrumento-info .precio-envio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.instrumento-info .precio h3 {
+    font-size: 28px;
+    color: #3483fa;
+}
+
+.instrumento-info .envio {
+    font-size: 14px;
+    color: #666;
+}
+
+.instrumento-info .envio-gratis {
+    color: #00a650;
+    display: flex;
+    align-items: center;
+}
+
+.instrumento-info .envio-gratis img {
+    margin-right: 5px;
+}
+
+.instrumento-info .descripciontitulo {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.instrumento-info .descripcion {
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.5;
+}

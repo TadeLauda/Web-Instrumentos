@@ -1,0 +1,44 @@
+.donde-estamos-container {
+  padding: 50px 0;
+  background-image: url('../img/musica1.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  height: 100vh;
+  overflow: hidden; 
+  position: relative;
+}
+
+/* Añade un pseudo-elemento solo para el fondo */
+.donde-estamos-container::before {
+  content: '';
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+
+/* Ajusta el mapa para que esté por encima del pseudo-elemento */
+.map-container {
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative; 
+  z-index: 2; 
+}
+
+/* Estilos para el título "Donde Estamos" */
+.donde-estamos-title {
+  text-align: center;
+  color: #fff; 
+  position: relative; 
+  z-index: 2;
+  font-size: 26px; 
+  margin-bottom: 10px;
+  color: #ffffff; 
+  padding: 10px;
+  border-radius: 5px; 
+  text-transform: uppercase; 
+  font-weight: bold;
+}

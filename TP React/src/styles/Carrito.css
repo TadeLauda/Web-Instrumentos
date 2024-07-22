@@ -1,0 +1,105 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://www.ilproson.es/images/ilproson-nigran-instrumentos.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #ff5500;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.515); /* Fondo blanco semitransparente */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.cart-item {
+    background-color: #ffffff83;
+    border: 1px solid #ddddddab;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin: 10px 0;
+    width: 30%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cart-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cart-item h2 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+    color: #000000;
+}
+
+.cart-item p {
+    font-size: 1.2em;
+    margin: 0 0 15px;
+    color: #252525;
+}
+
+/* Botón personalizado */
+.button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.volver-container{
+    position: absolute;
+    left: 15%;
+    top: 3%;
+    margin: 20px;
+}
+
+.button-volver{
+    padding: 11px 26px;
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+    .cart-item {
+        width: 95%;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}

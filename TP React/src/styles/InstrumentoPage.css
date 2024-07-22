@@ -1,0 +1,130 @@
+.instrumentos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.instrumentos-page {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color-scheme: light dark;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.044), rgba(255, 255, 255, 0.055)), url('https://www.ilproson.es/images/ilproson-nigran-instrumentos.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mininav {
+    margin-bottom: 10px;
+    margin-top: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 26px;
+    color: #ffffff;
+    padding-left: 5px;
+    padding-top: 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-carrito {
+    display: block;
+    margin: 20px auto;
+    background-color: #007bff;
+}
+  
+.btn-carrito:hover {
+    background-color: #0056b3;
+}
+
+.cart-icon {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.cart-icon img {
+    width: 60px;
+    height: auto;
+}
+  
+.cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-info {
+    position: absolute;
+    top: 135px; /* Ajusta según el tamaño de tu navbar */
+    left: 83%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 300px;
+    display: none;
+}
+
+.cart-info.open {
+    display: block;
+}
+
+.cart-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+  
+.cart-info ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.cart-info li {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.btn-go-to-cart {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+  
+.btn-go-to-cart:hover {
+    background-color: #0056b3;
+}
